@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: IRANSans, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    --header: rgb(197, 189, 189);
+    --button: #04AA6D;
+    --footer: #042745;
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWebFaNumLight.eot');
+    src: url('../fonts/IRANSansWebFaNumLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/IRANSansWebFaNumLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSansWebFaNumLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWebFaNumLight.ttf') format('truetype');
+    font-display: swap;
+}
+.container-fluid header{
+    justify-content: space-between;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: var(--header);
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+.fa-bars{
+    display: none;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 25px;
+}
+nav{
+    text-align: right;
+}
+h1.non{
+    display: none;
+}
+h1,h2{
+    padding: 15px 0;
+}
+.d-show {
+    display: block;
+}
+#slideout-menu{
+    display: none;
+}
+/*--------header-----------*/
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+nav ul .li-first{
+    position: relative;
+}
+nav ul .li-first ul{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    padding: 0;
+    display: none;
+}
+nav ul .li-first:hover ul{
+    background-color: var(--button);
+    display: block;
+}
+nav ul .li-first ul li.sub-menu{
+    width: 130px;
+    height: 45px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+nav ul li:hover{
+    background-color: var(--button);
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    background-color: var(--button);
+    color: #fff;
+}
+/*----------/header/----------*/
+.banner{
+    background-image: url(../img/tolid-konande-miz-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+/*------------main----------*/
+
+main{
+    margin-top: 30px;
+}
+main article{
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+main article section{
+    padding: 30px 0;
+}
+main article section figure{
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 8px 0 rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 2px 8px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 8px 0 rgba(0,0,0,0.75);
+}
+main article section figure.cop-b{
+    height: 500px;
+}
+main article section figure.cop-b a img{
+    height: 50%;
+}
+main article section figure a{}
+.container article section figure a img{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+main article section figure h2{}
+main article section figure figcaption{}
+/*---------/main/---------------*/
+
+/*---------footer---------------*/
+
+.back-footer{
+    background-color: var(--footer);
+}
+.back-footer div{
+    color: #fff;
+}
+.back-footer div.rigth-f{
+    text-align: right;
+}
+.back-footer div ul{
+    list-style: none;
+}
+.back-footer div.rigth-f ul li{
+    padding: 15px;
+}
+.back-footer div.rigth-f ul li i.fas{
+    position: relative;
+    left: 120px;
+}
+.back-footer div.left-f{
+    text-align: center;
+}
+.back-footer div.left-f i{
+    padding: 20px
+}
+/*---------/footer/---------------*/
+
+/*---------media query----------------*/
+@media (max-width: 576px){
+    main{
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px){
+    .fa-bars{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px) and (min-width: 568px){
+    main article section figure{
+        height: 300px;
+    }
+    h2 {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
